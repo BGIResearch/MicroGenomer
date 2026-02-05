@@ -1,0 +1,12 @@
+{
+  "name_or_path": "StrainDNA",
+  "remove_space": false,
+  "do_lower_case": false,
+  "tokenizer_class": "DNATokenizer",
+  "auto_map": {
+    "AutoTokenizer": [
+      "tokenization_retriever.DNATokenizer",
+      null
+      ]
+  }
+}
