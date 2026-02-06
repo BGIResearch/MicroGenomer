@@ -60,7 +60,7 @@ The input path can be a single CSV file or a folder. If it is a folder, all CSV 
 ### Docker Deployment
 * First, pull the Docker image:
 ```bash
-docker pull sunhaotong0605/microgenomer:1.0
+docker pull sunhaotong0605/microgenomer:0.1
 ```
 * Run Inference for Different Downstream Tasks:
 ```bash
@@ -69,8 +69,8 @@ docker run --rm --gpus all \
     -v /path/to/output/:/data/output \
     -e INPUT_PATH="/data/input" \
     -e OUTPUT_PATH="/data/output" \
-    sunhaotong0605/microgenomer:1.0 \
-    sh -c 'bash start.sh $INPUT_PATH $OUTPUT_PATH test_growth'
+    sunhaotong0605/microgenomer:0.1 \
+    sh -c 'bash run.sh --input_path $INPUT_PATH --output_dir $OUTPUT_PATH --task test_growth'
 ```
 Please replace `/path/to/input/`, `/path/to/output/`, and the downstream task option(e.g., `test_growth`) with your actual paths and desired task.
 
