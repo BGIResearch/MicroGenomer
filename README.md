@@ -8,6 +8,11 @@ MicroGenomer is a foundation model for transferable microbial genome representat
 </div>
 Figure 1. Overview of MicroGenomer.
 
+## GPU Hardware Requirements
+Since the model leverages FlashAttention for computational acceleration to enhance the efficiency of genomic representation extraction and downstream task inference, we recommend the following hardware configurations to ensure optimal model performance:
+- NVIDIA GPUs with Ampere architecture or newer are required (e.g., RTX 30/40 series consumer-grade GPUs, A10/A100/A800 professional-grade GPUs). 
+- A minimum of 16GB VRAM is recommended (32GB or higher for batch processing of genomic data).
+
 ## Quick Start
 ### Download the GitHub Repository
 [Download](https://github.com/BGIResearch/MicroGenomer/archive/refs/heads/main.zip) the GitHub repository and extract the files to a designated folder.
